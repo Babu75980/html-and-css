@@ -1,0 +1,56 @@
+.square{
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+    /* transition-duration: 2s; */
+    /* transition-property: background-color; */
+    /* transition-property: all; */
+    /* transition-timing-function:cubic-bezier(1,-0.99, 1, 1); */
+    /* ease-in-out, inspect and go to linear and adjust the speed graph. then, copy the code ane paste */
+    /* transition-delay: 1s; */
+    /* transition: background-color 3s 1s linear; */
+    /* 1.property 2.duration 3.delay 4.linear(speed) the last one is important*/
+}
+.square:hover{
+    background-color: blueviolet;
+    /* width: 600px; */
+    /* transform:rotate(45deg); */
+    /* rotatex, rotatey,  */
+    transform: scalex(2);
+    /* scale(2) double of the normal */
+    /* scaley(2) y axis only double */
+    /* scalex(2) x axis only double */
+    transform: translatey(20px);
+    /* translate: 20px : move x axis 20px */
+    /* translatey: 20px : move y axis 20px & negative(-) means move to top */
+
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;/* circle from square */
+    position: relative;
+    background-color: tomato;
+    animation-name: circle;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;/* to change initial statge to end(100%) */
+    animation-iteration-count:1;
+    
+
+}
+@keyframes circle{
+    0%{
+        background-color: black;
+        /* width:50px;
+        height:50px; */
+        left: 0px;
+        top: 0px;
+    }
+    100%{
+        background-color: green;
+        width: 300px;
+        height: 300px;
+        left: 600px;
+        top: 600px;
+    }
+}
